@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+ <context:annotation-config></context:annotation-config>
+ <context:component-scan base-package="com.springcore.autowiringdemo"></context:component-scan>
+
+	<!-- <bean class="com.springcore.autowiringdemo.Student" name="stud">
+		
+		<property name="name" value="sherly"></property>
+		<property name="age" value="5"></property>
+		<property name="mother" value="auly"></property>
+	</bean> -->
+
+<!-- 	<bean class="com.springcore.autowiringdemo.Address" name="address">
+		<property name="street" value="Shivaji Nagar"></property>
+		<property name="city" value="Dungarpur"></property>
+	</bean> -->
+
+	<bean class="com.springcore.autowiringdemo.Address" name="address1">
+		<property name="street" value="Shivaji Park"></property>
+		<property name="city" value="Pune"></property>
+	</bean>
+
+</beans>
